@@ -4,6 +4,8 @@ import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
 import {CameraTestPage} from './pages/camera-test/camera-test'
 import {NetworkTestPage} from './pages/network-test/network-test'
+import {NotificationTestPage} from './pages/notification-test/notification-test'
+import {BarcodeTestPage} from './pages/barcode-test/barcode-test'
 
 @Component({
   templateUrl: 'build/app.html'
@@ -19,8 +21,9 @@ export class MyApp {
   	this.pages = [
   		{component: HomePage, title: 'Home', icon: 'home'},
   		{component: CameraTestPage, title: 'Camera', icon: 'camera'},
-      {component: NetworkTestPage, title: 'Network', icon: 'git-network'}
-
+      {component: NetworkTestPage, title: 'Network', icon: 'git-network'},
+      {component: NotificationTestPage, title: 'Notification', icon: 'notifications'},
+      {component: BarcodeTestPage , title: 'Barcode', icon: 'barcode'}
   		];
 
     platform.ready().then(() => {
