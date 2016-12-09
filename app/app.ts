@@ -6,6 +6,7 @@ import {CameraTestPage} from './pages/camera-test/camera-test'
 import {NetworkTestPage} from './pages/network-test/network-test'
 import {NotificationTestPage} from './pages/notification-test/notification-test'
 import {BarcodeTestPage} from './pages/barcode-test/barcode-test'
+import {VibrationTestPage} from './pages/vibration-test/vibration-test'
 
 @Component({
   templateUrl: 'build/app.html'
@@ -23,7 +24,8 @@ export class MyApp {
   		{component: CameraTestPage, title: 'Camera', icon: 'camera'},
       {component: NetworkTestPage, title: 'Network', icon: 'git-network'},
       {component: NotificationTestPage, title: 'Notification', icon: 'notifications'},
-      {component: BarcodeTestPage , title: 'Barcode', icon: 'barcode'}
+      {component: BarcodeTestPage , title: 'Barcode', icon: 'barcode'},
+      {component: VibrationTestPage , title: 'Vibration', icon: 'disc'}
   		];
 
     platform.ready().then(() => {
