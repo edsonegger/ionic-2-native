@@ -3,6 +3,7 @@ import {Platform, ionicBootstrap, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
 import {CameraTestPage} from './pages/camera-test/camera-test'
+import {NetworkTestPage} from './pages/network-test/network-test'
 
 @Component({
   templateUrl: 'build/app.html'
@@ -17,7 +18,8 @@ export class MyApp {
 
   	this.pages = [
   		{component: HomePage, title: 'Home', icon: 'home'},
-  		{component: CameraTestPage, title: 'Camera', icon: 'camera'}
+  		{component: CameraTestPage, title: 'Camera', icon: 'camera'},
+      {component: NetworkTestPage, title: 'Network', icon: 'git-network'}
 
   		];
 
