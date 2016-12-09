@@ -19,5 +19,10 @@ connectionType: any;
 
   check() {
   	this.connectionType = Network.connection;
+
+  	if(Network.connection == Connection.WIFI) {
+  		// code...
+  		
+  	}
   }
 }
